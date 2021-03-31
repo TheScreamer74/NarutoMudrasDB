@@ -117,28 +117,28 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="katon : boule de feu supreme" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fdd-bl-dlE">
-                                                    <rect key="frame" x="99.5" y="11.5" width="238.5" height="22"/>
+                                                    <rect key="frame" x="99.5" y="18" width="238.5" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01/01/2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="xd4-BH-gMI">
-                                                    <rect key="frame" x="99.5" y="61" width="62.5" height="15"/>
+                                                    <rect key="frame" x="99.5" y="40" width="62.5" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="fdd-bl-dlE" firstAttribute="top" secondItem="rVD-ur-TOJ" secondAttribute="top" id="GPX-e7-YGD"/>
                                                 <constraint firstItem="xd4-BH-gMI" firstAttribute="leading" secondItem="rVD-ur-TOJ" secondAttribute="trailing" constant="15" id="GgS-tx-DlW"/>
                                                 <constraint firstItem="fdd-bl-dlE" firstAttribute="leading" secondItem="rVD-ur-TOJ" secondAttribute="trailing" constant="15" id="HbH-DY-sbj"/>
                                                 <constraint firstItem="rVD-ur-TOJ" firstAttribute="leading" secondItem="vyG-xv-gia" secondAttribute="leading" constant="20" id="HjD-Sh-Trm"/>
                                                 <constraint firstItem="rVD-ur-TOJ" firstAttribute="top" secondItem="vyG-xv-gia" secondAttribute="top" constant="11.5" id="IdT-gk-Iub"/>
-                                                <constraint firstItem="xd4-BH-gMI" firstAttribute="bottom" secondItem="rVD-ur-TOJ" secondAttribute="bottom" id="KdF-u3-s1M"/>
+                                                <constraint firstItem="fdd-bl-dlE" firstAttribute="centerY" secondItem="rVD-ur-TOJ" secondAttribute="centerY" multiplier="2/3" id="JRQ-8V-V8P"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fdd-bl-dlE" secondAttribute="trailing" constant="15" id="PLB-4G-9iS"/>
                                                 <constraint firstAttribute="bottom" secondItem="rVD-ur-TOJ" secondAttribute="bottom" constant="11.5" id="XCi-zm-VE7"/>
-                                                <constraint firstItem="xd4-BH-gMI" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fdd-bl-dlE" secondAttribute="bottom" constant="10" id="cTd-Eu-5JL"/>
+                                                <constraint firstItem="xd4-BH-gMI" firstAttribute="top" secondItem="fdd-bl-dlE" secondAttribute="bottom" id="cTd-Eu-5JL"/>
+                                                <constraint firstItem="fdd-bl-dlE" firstAttribute="height" secondItem="rVD-ur-TOJ" secondAttribute="height" multiplier="0.341085" id="fuK-u0-U5I"/>
                                                 <constraint firstItem="rVD-ur-TOJ" firstAttribute="centerY" secondItem="vyG-xv-gia" secondAttribute="centerY" id="meg-3E-PX5"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xd4-BH-gMI" secondAttribute="trailing" constant="15" id="s4y-ko-889"/>
                                             </constraints>
@@ -680,10 +680,14 @@
             <point key="canvasLocation" x="1854" y="1588"/>
         </scene>
     </scenes>
+    <color key="tintColor" name="Yellow"/>
     <resources>
         <image name="camera" catalog="system" width="128" height="94"/>
         <image name="photo" catalog="system" width="128" height="93"/>
         <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="Yellow">
+            <color red="0.94900000095367432" green="0.73299998044967651" blue="0.28200000524520874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

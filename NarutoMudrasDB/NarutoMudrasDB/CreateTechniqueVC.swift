@@ -25,7 +25,10 @@ class CreateTechniqueVC: UIViewController {
 
     
     @IBAction func addImageAction(_ sender: Any) {
-        //ajouter une image
+        ImagePickerManager().pickImage(self){
+            image in
+            self.techniqueImage.image = image
+        }
     }
     
     @IBAction func addSigneAction(_ sender: Any) {

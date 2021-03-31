@@ -8,7 +8,11 @@
     </entity>
     <entity name="Technique" representedClassName="Technique" syncable="YES" codeGenerationType="class">
         <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
         <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="user" optional="YES" attributeType="String"/>
+        <attribute name="village" optional="YES" attributeType="String"/>
         <relationship name="mudra" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Mudra" inverseName="technique" inverseEntity="Mudra"/>
     </entity>
     <entity name="Village" representedClassName="Village" syncable="YES" codeGenerationType="class">
@@ -17,7 +21,7 @@
     </entity>
     <elements>
         <element name="Mudra" positionX="278.98046875" positionY="8.38671875" width="128" height="103"/>
-        <element name="Technique" positionX="-36" positionY="9" width="128" height="88"/>
+        <element name="Technique" positionX="-36" positionY="9" width="128" height="148"/>
         <element name="Village" positionX="126" positionY="45" width="128" height="73"/>
     </elements>
 </model>

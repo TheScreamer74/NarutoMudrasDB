@@ -10,6 +10,8 @@ import UIKit
 class ListeTechniquesVC: UIViewController {
     @IBOutlet weak var techniquesTableView: UITableView!
     
+ 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         techniquesTableView.delegate = self
@@ -28,10 +30,9 @@ extension ListeTechniquesVC: UITableViewDelegate, UITableViewDataSource {
         
         let arr = DataBaseHelper.shareInstance.fetchTechnique()
         
-        /*
+        
         cell.nameTechniqueTxt.text = arr[indexPath.row].title
         cell.techniqueImage.image = UIImage(data: arr[indexPath.row].image!)
-        */
         
         return cell
     }

@@ -63,6 +63,23 @@ class DataBaseHelper {
         return fetchingMudra
     }
     
+    func fetchSpecificMudra(name: String) -> [Mudra]{
+        var fetchingMudra = [Mudra]()
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Mudra")
+        
+        let predicate = NSPredicate(format: "title == %@", name)
+        fetchRequest.predicate = predicate
+        
+        do {
+            fetchingMudra = try context.fetch(fetchRequest) as! [Mudra]
+        } catch {
+            print("Error while fetching the Mudra")
+        }
+    
+        return fetchingMudra
+        
+    }
+    
     
     
     

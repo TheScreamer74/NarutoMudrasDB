@@ -33,7 +33,7 @@
 		E96798CC25EF7651001EFCFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E96798CF25EF7651001EFCFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E96798D125EF7651001EFCFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9EE53D32614702F00F287F8 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		E9EE53D32614702F00F287F8 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DatabaseHelper.swift; path = ../DatabaseHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,6 @@
 		E96798B425EF7650001EFCFE = {
 			isa = PBXGroup;
 			children = (
-				E9EE53D32614702F00F287F8 /* DatabaseHelper.swift */,
 				E96798BF25EF7650001EFCFE /* NarutoMudrasDB */,
 				E96798BE25EF7650001EFCFE /* Products */,
 			);
@@ -74,6 +73,7 @@
 				E96798C625EF7650001EFCFE /* Main.storyboard */,
 				BFC4544A261468DE007A57EC /* ListeTechniquesVC.swift */,
 				BFC4544726146829007A57EC /* TechniquesTableViewCell.swift */,
+				E9EE53D32614702F00F287F8 /* DatabaseHelper.swift */,
 				E96798CC25EF7651001EFCFE /* Assets.xcassets */,
 				E96798CE25EF7651001EFCFE /* LaunchScreen.storyboard */,
 				E96798D125EF7651001EFCFE /* Info.plist */,

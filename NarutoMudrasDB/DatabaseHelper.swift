@@ -31,6 +31,23 @@ class DataBaseHelper {
    }
     
     
+    func countMudra() -> Int {
+
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Mudra")
+        var count = 0
+        
+        do {
+            count = try context.count(for: fetchRequest)
+           
+        } catch {
+            print("Error while fetching the technique")
+        }
+
+        return count
+    }
+
+    
+    
     //récupération d'un mudra (signe) dans la base de donnée
     func fetchMudra() -> [Mudra] {
         
@@ -45,6 +62,9 @@ class DataBaseHelper {
         
         return fetchingMudra
     }
+    
+    
+    
     
     func saveTechnique(nameSigne: String, imageSigne: Data) {
         
@@ -61,6 +81,20 @@ class DataBaseHelper {
         }
    }
 
+    func countTechnique() -> Int {
+
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Technique")
+        var count = 0
+        
+        do {
+            count = try context.count(for: fetchRequest)
+           
+        } catch {
+            print("Error while fetching the technique")
+        }
+
+        return count
+    }
     
     func fetchTechnique() -> [Technique] {
         

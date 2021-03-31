@@ -20,11 +20,17 @@ class ListeTechniquesVC: UIViewController {
 extension ListeTechniquesVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return DataBaseHelper.shareInstance.countMudra()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TechniquesTableViewCell", for: indexPath) as! TechniquesTableViewCell
+        
+        let arr = DataBaseHelper.shareInstance.fetchMudra()
+        
+        cell.nameTechniqueTxt.text = arr[indexPath.row].title
+        cell.techniqueImage.image = UIImage(data: arr[indexPath.row].image!)
+        
         return cell
     }
     

@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFBFA241261478E20064F430 /* CreateTechniqueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBFA240261478E20064F430 /* CreateTechniqueVC.swift */; };
 		BFC4544426145B30007A57EC /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC4544326145B30007A57EC /* ImagePickerManager.swift */; };
 		BFC4544826146829007A57EC /* TechniquesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC4544726146829007A57EC /* TechniquesTableViewCell.swift */; };
 		BFC4544B261468DE007A57EC /* ListeTechniquesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC4544A261468DE007A57EC /* ListeTechniquesVC.swift */; };
+		BFC4544E26146FE5007A57EC /* DetailTechniqueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC4544D26146FE5007A57EC /* DetailTechniqueVC.swift */; };
+		BFC4545126147012007A57EC /* ListeSignesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC4545026147012007A57EC /* ListeSignesTableViewCell.swift */; };
 		E96798C125EF7650001EFCFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96798C025EF7650001EFCFE /* AppDelegate.swift */; };
 		E96798C325EF7650001EFCFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96798C225EF7650001EFCFE /* SceneDelegate.swift */; };
 		E96798C525EF7650001EFCFE /* CreateSigneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96798C425EF7650001EFCFE /* CreateSigneVC.swift */; };
@@ -20,9 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BFBFA240261478E20064F430 /* CreateTechniqueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTechniqueVC.swift; sourceTree = "<group>"; };
 		BFC4544326145B30007A57EC /* ImagePickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 		BFC4544726146829007A57EC /* TechniquesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechniquesTableViewCell.swift; sourceTree = "<group>"; };
 		BFC4544A261468DE007A57EC /* ListeTechniquesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeTechniquesVC.swift; sourceTree = "<group>"; };
+		BFC4544D26146FE5007A57EC /* DetailTechniqueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTechniqueVC.swift; sourceTree = "<group>"; };
+		BFC4545026147012007A57EC /* ListeSignesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeSignesTableViewCell.swift; sourceTree = "<group>"; };
 		E96798BD25EF7650001EFCFE /* NarutoMudrasDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NarutoMudrasDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E96798C025EF7650001EFCFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E96798C225EF7650001EFCFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +75,9 @@
 				BFC4544326145B30007A57EC /* ImagePickerManager.swift */,
 				E96798C425EF7650001EFCFE /* CreateSigneVC.swift */,
 				E96798C625EF7650001EFCFE /* Main.storyboard */,
+				BFBFA240261478E20064F430 /* CreateTechniqueVC.swift */,
+				BFC4544D26146FE5007A57EC /* DetailTechniqueVC.swift */,
+				BFC4545026147012007A57EC /* ListeSignesTableViewCell.swift */,
 				BFC4544A261468DE007A57EC /* ListeTechniquesVC.swift */,
 				BFC4544726146829007A57EC /* TechniquesTableViewCell.swift */,
 				E96798CC25EF7651001EFCFE /* Assets.xcassets */,
@@ -153,9 +162,12 @@
 				BFC4544426145B30007A57EC /* ImagePickerManager.swift in Sources */,
 				BFC4544B261468DE007A57EC /* ListeTechniquesVC.swift in Sources */,
 				E96798C125EF7650001EFCFE /* AppDelegate.swift in Sources */,
+				BFC4544E26146FE5007A57EC /* DetailTechniqueVC.swift in Sources */,
 				E96798CB25EF7650001EFCFE /* NarutoMudrasDB.xcdatamodeld in Sources */,
+				BFC4545126147012007A57EC /* ListeSignesTableViewCell.swift in Sources */,
 				BFC4544826146829007A57EC /* TechniquesTableViewCell.swift in Sources */,
 				E96798C325EF7650001EFCFE /* SceneDelegate.swift in Sources */,
+				BFBFA241261478E20064F430 /* CreateTechniqueVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

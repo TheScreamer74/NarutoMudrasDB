@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Foundation
+import CoreData
 
 class CreateSigneVC: UIViewController {
     @IBOutlet weak var addImageButton: UIButton!
@@ -15,6 +17,24 @@ class CreateSigneVC: UIViewController {
 
     @IBAction func valideSigneAction(_ sender: Any) {
         //Valide et ajouter le signe
+        
+        guard let title = nameSigneTxtField.text else {
+            return //FIXME() ajouter un message d'erreur : "vous devez donner un nom a la technique"
+        }
+        
+        guard let imageData = signeImageView.image?.pngData() else {
+            return //FIXME() ajouter un message d'erreur : "vous devez selectionner une image"
+        }
+        
+        
+        
+        // 1. Récupération du contexte
+        let managedContext = persistentContainer.viewContext
+        // 2. Création d'un `Item` (class Item: NSManagedObject)
+        let item = Item(context: managedContext)
+        
+        
+        
     }
     
     @IBAction func addImageAction(_ sender: Any) {

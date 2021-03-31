@@ -83,11 +83,14 @@ class DataBaseHelper {
     
     
     
-    func saveTechnique(nameSigne: String, imageSigne: Data) {
+    func saveTechnique(nameTechnique: String, imageTechnique: Data, villageTechnique: String, userTechnique: String, descTechnique: String) {
         
         let techniqueInstance = Technique(context: context)
-        techniqueInstance.title = nameSigne
-//        techniqueInstance.image = imageSigne
+        techniqueInstance.title = nameTechnique
+        techniqueInstance.user = userTechnique
+        techniqueInstance.village = villageTechnique
+        techniqueInstance.desc = descTechnique
+        techniqueInstance.image = imageTechnique
         techniqueInstance.creationDate = Date()
         
         do {

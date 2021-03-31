@@ -583,14 +583,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Ajouter"/>
                                 <connections>
-                                    <action selector="navBarRightAction:" destination="pRr-Op-f9q" eventType="touchUpInside" id="iYN-jQ-LNR"/>
+                                    <action selector="AddTechniqueAction:" destination="pRr-Op-f9q" eventType="touchUpInside" id="m3o-h1-hgO"/>
                                 </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="addImageButton" destination="24s-4B-JBa" id="dmk-3p-6X3"/>
-                        <outlet property="navBarRightButton" destination="KDr-WP-fC6" id="22L-jL-bIJ"/>
+                        <outlet property="navBarRightButton" destination="KDr-WP-fC6" id="w1E-fO-sS5"/>
                         <outlet property="signeTableView" destination="dX6-ZU-AOG" id="mo3-V2-L1q"/>
                         <outlet property="techniqueImage" destination="4fs-ux-N9s" id="AiA-rT-5Xj"/>
                     </connections>

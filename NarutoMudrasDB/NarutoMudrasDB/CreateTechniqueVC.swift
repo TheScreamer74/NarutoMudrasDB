@@ -22,9 +22,7 @@ class CreateTechniqueVC: UIViewController {
     @IBOutlet weak var addImageButton: UIButton!
     
     @IBOutlet weak var techniqueImage: UIImageView!
-    
-    @IBAction func navBarRightAction(_ sender: Any) {
-    }
+
     
     @IBAction func addImageAction(_ sender: Any) {
     }
@@ -54,7 +52,10 @@ class CreateTechniqueVC: UIViewController {
         signeTableView.reloadData()
         print(signes)
     }
-
+    @IBAction func AddTechniqueAction(_ sender: Any) {
+        
+    }
+    
 }
 
 extension CreateTechniqueVC: UITableViewDelegate, UITableViewDataSource {
@@ -70,7 +71,6 @@ extension CreateTechniqueVC: UITableViewDelegate, UITableViewDataSource {
         
         return cell
     }
-    
     
 }
 

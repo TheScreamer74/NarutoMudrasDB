@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TLU-cV-uH3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TLU-cV-uH3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -583,16 +583,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Ajouter"/>
                                 <connections>
-                                    <action selector="AddTechniqueAction:" destination="pRr-Op-f9q" eventType="touchUpInside" id="m3o-h1-hgO"/>
+                                    <action selector="addToDB:" destination="pRr-Op-f9q" eventType="touchUpInside" id="m58-3f-aeo"/>
                                 </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="addImageButton" destination="24s-4B-JBa" id="dmk-3p-6X3"/>
-                        <outlet property="navBarRightButton" destination="KDr-WP-fC6" id="w1E-fO-sS5"/>
+                        <outlet property="descTextfield" destination="kJ6-sE-mcS" id="RZV-de-e5T"/>
+                        <outlet property="imageTechniqueView" destination="4fs-ux-N9s" id="14b-nx-RJb"/>
+                        <outlet property="nameTextfield" destination="bCx-wV-1uC" id="GOG-Wf-wMw"/>
+                        <outlet property="navBarRightButton" destination="KDr-WP-fC6" id="G7i-gx-bxU"/>
                         <outlet property="signeTableView" destination="dX6-ZU-AOG" id="mo3-V2-L1q"/>
                         <outlet property="techniqueImage" destination="4fs-ux-N9s" id="AiA-rT-5Xj"/>
+                        <outlet property="userTextfield" destination="Snd-wZ-7Hg" id="z8c-90-G62"/>
+                        <outlet property="villageTextfield" destination="y9j-MO-FQo" id="waO-xg-pfy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K7f-bb-oBn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -17,7 +17,12 @@ class ListeTechniquesVC: UIViewController {
         techniquesTableView.delegate = self
         techniquesTableView.dataSource = self
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        techniquesTableView.reloadData()
+    }
 }
+
 
 extension ListeTechniquesVC: UITableViewDelegate, UITableViewDataSource {
     

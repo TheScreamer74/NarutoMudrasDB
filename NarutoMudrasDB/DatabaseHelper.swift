@@ -83,7 +83,7 @@ class DataBaseHelper {
     
     
     
-    func saveTechnique(nameTechnique: String, imageTechnique: Data, villageTechnique: String, userTechnique: String, descTechnique: String) {
+    func saveTechnique(nameTechnique: String, imageTechnique: Data, villageTechnique: String, userTechnique: String, descTechnique: String, signes: [Mudra]) {
         
         let techniqueInstance = Technique(context: context)
         techniqueInstance.title = nameTechnique
@@ -92,6 +92,10 @@ class DataBaseHelper {
         techniqueInstance.desc = descTechnique
         techniqueInstance.image = imageTechnique
         techniqueInstance.creationDate = Date()
+        
+        for signe in signes {
+            techniqueInstance.addToMudra(signe)
+        }
         
         do {
             try context.save()

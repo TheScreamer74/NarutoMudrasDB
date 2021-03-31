@@ -29,7 +29,7 @@ class CreateSigneVC: UIViewController {
         //Enregistrement en base
         DataBaseHelper.shareInstance.saveMudra(nameSigne: title, imageSigne: imageData)
         
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
         
         
     }

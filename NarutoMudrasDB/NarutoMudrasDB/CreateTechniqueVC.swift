@@ -12,6 +12,11 @@ protocol getSignesDelegate {
 }
 
 class CreateTechniqueVC: UIViewController {
+    @IBOutlet weak var nameTextfield: UITextField!
+    @IBOutlet weak var villageTextfield: UITextField!
+    @IBOutlet weak var userTextfield: UITextField!
+    @IBOutlet weak var imageTechniqueView: UIImageView!
+    @IBOutlet weak var descTextfield: UITextView!
     
     var delegate: getSignesDelegate?
     
@@ -23,6 +28,16 @@ class CreateTechniqueVC: UIViewController {
     
     @IBOutlet weak var techniqueImage: UIImageView!
 
+    @IBAction func addToDB(_ sender: Any) {
+        
+        guard let imageData = imageTechniqueView.image?.pngData() else {
+            return
+        }
+        
+        DataBaseHelper.shareInstance.saveTechnique(nameTechnique: nameTextfield.text!, imageTechnique: imageData, villageTechnique: villageTextfield.text!, userTechnique: userTextfield.text!, descTechnique: descTextfield.text!, signes: signes)
+        
+        dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func addImageAction(_ sender: Any) {
         ImagePickerManager().pickImage(self){

@@ -15,6 +15,7 @@
 		E96798CB25EF7650001EFCFE /* NarutoMudrasDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E96798C925EF7650001EFCFE /* NarutoMudrasDB.xcdatamodeld */; };
 		E96798CD25EF7651001EFCFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96798CC25EF7651001EFCFE /* Assets.xcassets */; };
 		E96798D025EF7651001EFCFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96798CE25EF7651001EFCFE /* LaunchScreen.storyboard */; };
+		E97A4AD52614671F00B895A3 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97A4AD42614671F00B895A3 /* DatabaseHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E96798CC25EF7651001EFCFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E96798CF25EF7651001EFCFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E96798D125EF7651001EFCFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E97A4AD42614671F00B895A3 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				E96798C225EF7650001EFCFE /* SceneDelegate.swift */,
 				BFC4544326145B30007A57EC /* ImagePickerManager.swift */,
 				E96798C425EF7650001EFCFE /* CreateSigneVC.swift */,
+				E97A4AD42614671F00B895A3 /* DatabaseHelper.swift */,
 				E96798C625EF7650001EFCFE /* Main.storyboard */,
 				E96798CC25EF7651001EFCFE /* Assets.xcassets */,
 				E96798CE25EF7651001EFCFE /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				BFC4544426145B30007A57EC /* ImagePickerManager.swift in Sources */,
 				E96798C125EF7650001EFCFE /* AppDelegate.swift in Sources */,
 				E96798CB25EF7650001EFCFE /* NarutoMudrasDB.xcdatamodeld in Sources */,
+				E97A4AD52614671F00B895A3 /* DatabaseHelper.swift in Sources */,
 				E96798C325EF7650001EFCFE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

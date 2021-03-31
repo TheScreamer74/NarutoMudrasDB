@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TLU-cV-uH3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TLU-cV-uH3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -41,17 +41,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtB-fX-ehS">
+                                <rect key="frame" x="15" y="521" width="384" height="30"/>
+                                <state key="normal" title="fetch mudra (temporary button)"/>
+                                <connections>
+                                    <action selector="fetchmudraaction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9fk-tH-BxR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="d0O-0a-C3J" firstAttribute="top" secondItem="wGZ-1K-s3L" secondAttribute="bottom" constant="10" id="0mL-AZ-gZN"/>
+                            <constraint firstItem="FtB-fX-ehS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="3Eu-RG-UbC"/>
                             <constraint firstItem="Mx7-FM-8N4" firstAttribute="top" secondItem="vmT-Km-jQF" secondAttribute="bottom" constant="10" id="49m-OY-d0p"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d0O-0a-C3J" secondAttribute="trailing" constant="15" id="7KU-il-iYt"/>
                             <constraint firstItem="vmT-Km-jQF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="ApI-oX-Zi1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FtB-fX-ehS" secondAttribute="trailing" constant="15" id="BBR-ii-tKc"/>
                             <constraint firstItem="d0O-0a-C3J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="EbW-Tu-oTC"/>
                             <constraint firstItem="wGZ-1K-s3L" firstAttribute="top" secondItem="Mx7-FM-8N4" secondAttribute="bottom" constant="30" id="YWG-50-79h"/>
                             <constraint firstItem="wGZ-1K-s3L" firstAttribute="leading" secondItem="d0O-0a-C3J" secondAttribute="leading" id="faX-hh-2zI"/>
+                            <constraint firstItem="FtB-fX-ehS" firstAttribute="top" secondItem="d0O-0a-C3J" secondAttribute="bottom" constant="15" id="jbJ-aY-wbG"/>
                             <constraint firstItem="vmT-Km-jQF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nGU-Kw-Kh6"/>
                             <constraint firstItem="Mx7-FM-8N4" firstAttribute="centerX" secondItem="vmT-Km-jQF" secondAttribute="centerX" id="r56-xb-MEH"/>
                             <constraint firstItem="vmT-Km-jQF" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="ttv-ud-9Op"/>

@@ -26,13 +26,8 @@ class CreateSigneVC: UIViewController {
             return //FIXME() ajouter un message d'erreur : "vous devez selectionner une image"
         }
         
-        
-        
-        // 1. Récupération du contexte
-        let managedContext = persistentContainer.viewContext
-        // 2. Création d'un `Item` (class Item: NSManagedObject)
-        let item = Item(context: managedContext)
-        
+        //Enregistrement en base
+        DataBaseHelper.shareInstance.saveMudra(nameSigne: title, imageSigne: imageData)
         
         
     }
@@ -43,6 +38,15 @@ class CreateSigneVC: UIViewController {
             image in
             self.signeImageView.image = image
         }
+    }
+    @IBAction func fetchmudraaction(_ sender: Any) {
+        
+        let arr = DataBaseHelper.shareInstance.fetchMudra()
+        
+        signeImageView.image = UIImage(data: arr[0].image!)
+        
+        nameSigneTxtField.text = arr[0].title
+        
     }
     
     override func viewDidLoad() {

@@ -174,7 +174,7 @@
         <!--Nom de la technique-->
         <scene sceneID="DRh-EB-fTL">
             <objects>
-                <viewController id="0ae-ET-pQW" sceneMemberID="viewController">
+                <viewController id="0ae-ET-pQW" customClass="DetailTechniqueVC" customModule="NarutoMudrasDB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FmV-JD-yYa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -191,12 +191,84 @@
                                                     <constraint firstAttribute="width" secondItem="r1W-YC-rFV" secondAttribute="height" multiplier="1:1" id="Kbj-wx-clY"/>
                                                 </constraints>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Les Signes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vfo-44-8ue">
+                                                <rect key="frame" x="20" y="239" width="294" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="46D-XO-pox">
+                                                <rect key="frame" x="20" y="266" width="374" height="187"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="187" id="8WQ-Mh-lvD"/>
+                                                </constraints>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ListeSignesTableViewCell" rowHeight="94" id="IaU-n0-ixs" customClass="ListeSignesTableViewCell" customModule="NarutoMudrasDB" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="28" width="374" height="94"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IaU-n0-ixs" id="0ti-Ts-ZEh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="94"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EGr-Af-Be3">
+                                                                    <rect key="frame" x="20" y="23" width="48" height="48"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="EGr-Af-Be3" secondAttribute="height" multiplier="1:1" id="TJd-ZF-FFa"/>
+                                                                        <constraint firstAttribute="height" constant="48" id="q2s-WB-isQ"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Le loup" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X0P-xc-vmd">
+                                                                    <rect key="frame" x="83" y="37.5" width="53" height="19.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="EGr-Af-Be3" firstAttribute="centerY" secondItem="0ti-Ts-ZEh" secondAttribute="centerY" id="53m-Lb-1N2"/>
+                                                                <constraint firstItem="X0P-xc-vmd" firstAttribute="centerY" secondItem="EGr-Af-Be3" secondAttribute="centerY" id="NJS-l1-zTm"/>
+                                                                <constraint firstItem="X0P-xc-vmd" firstAttribute="leading" secondItem="EGr-Af-Be3" secondAttribute="trailing" constant="15" id="dRr-uX-sBj"/>
+                                                                <constraint firstItem="EGr-Af-Be3" firstAttribute="leading" secondItem="0ti-Ts-ZEh" secondAttribute="leading" constant="20" id="kLq-FQ-Dtp"/>
+                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="X0P-xc-vmd" secondAttribute="trailing" constant="15" id="xxO-kD-oOT"/>
+                                                            </constraints>
+                                                        </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="signeImage" destination="EGr-Af-Be3" id="HRF-Ri-o2p"/>
+                                                            <outlet property="signeNameTxt" destination="X0P-xc-vmd" id="Y8E-vj-TBY"/>
+                                                        </connections>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                            </tableView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nom du village" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEf-M5-XZX">
+                                                <rect key="frame" x="20" y="510" width="94.5" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Village" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8id-o3-sBe">
+                                                <rect key="frame" x="20" y="483" width="374" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="8id-o3-sBe" firstAttribute="trailing" secondItem="46D-XO-pox" secondAttribute="trailing" id="0wP-Yw-dRm"/>
+                                            <constraint firstAttribute="trailing" secondItem="Vfo-44-8ue" secondAttribute="trailing" constant="100" id="2K6-i4-0x6"/>
+                                            <constraint firstItem="8id-o3-sBe" firstAttribute="top" secondItem="46D-XO-pox" secondAttribute="bottom" constant="30" id="DKH-vw-bdG"/>
                                             <constraint firstItem="r1W-YC-rFV" firstAttribute="centerX" secondItem="xVl-Wr-7yH" secondAttribute="centerX" id="KrH-FF-8DK"/>
                                             <constraint firstAttribute="height" constant="1000" id="LHa-gh-h4z"/>
+                                            <constraint firstAttribute="trailing" secondItem="46D-XO-pox" secondAttribute="trailing" constant="20" id="Nsb-M5-qGd"/>
+                                            <constraint firstItem="hEf-M5-XZX" firstAttribute="top" secondItem="8id-o3-sBe" secondAttribute="bottom" constant="5" id="OHC-XG-pjY"/>
+                                            <constraint firstItem="46D-XO-pox" firstAttribute="leading" secondItem="Vfo-44-8ue" secondAttribute="leading" id="TWh-Xt-vda"/>
+                                            <constraint firstItem="46D-XO-pox" firstAttribute="top" secondItem="Vfo-44-8ue" secondAttribute="bottom" constant="5" id="U5X-iy-3it"/>
                                             <constraint firstItem="r1W-YC-rFV" firstAttribute="top" secondItem="xVl-Wr-7yH" secondAttribute="top" constant="30" id="UF7-9f-O3w"/>
+                                            <constraint firstItem="8id-o3-sBe" firstAttribute="leading" secondItem="46D-XO-pox" secondAttribute="leading" id="cwR-LI-lbx"/>
+                                            <constraint firstItem="Vfo-44-8ue" firstAttribute="leading" secondItem="xVl-Wr-7yH" secondAttribute="leading" constant="20" id="dJe-ZP-J2U"/>
+                                            <constraint firstItem="Vfo-44-8ue" firstAttribute="top" secondItem="r1W-YC-rFV" secondAttribute="bottom" constant="30" id="nhF-Oh-rox"/>
+                                            <constraint firstItem="hEf-M5-XZX" firstAttribute="leading" secondItem="8id-o3-sBe" secondAttribute="leading" id="tL9-xV-Gua"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -229,6 +301,10 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="TechniqueImage" destination="r1W-YC-rFV" id="sSN-IR-P2K"/>
+                        <outlet property="signesTableView" destination="46D-XO-pox" id="ekg-zi-9me"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UeH-0J-nE4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

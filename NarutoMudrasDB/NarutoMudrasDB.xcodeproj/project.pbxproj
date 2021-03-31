@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BFC4544426145B30007A57EC /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC4544326145B30007A57EC /* ImagePickerManager.swift */; };
+		BFC4544826146829007A57EC /* TechniquesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC4544726146829007A57EC /* TechniquesTableViewCell.swift */; };
+		BFC4544B261468DE007A57EC /* ListeTechniquesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC4544A261468DE007A57EC /* ListeTechniquesVC.swift */; };
 		E96798C125EF7650001EFCFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96798C025EF7650001EFCFE /* AppDelegate.swift */; };
 		E96798C325EF7650001EFCFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96798C225EF7650001EFCFE /* SceneDelegate.swift */; };
 		E96798C525EF7650001EFCFE /* CreateSigneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96798C425EF7650001EFCFE /* CreateSigneVC.swift */; };
@@ -15,11 +17,12 @@
 		E96798CB25EF7650001EFCFE /* NarutoMudrasDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E96798C925EF7650001EFCFE /* NarutoMudrasDB.xcdatamodeld */; };
 		E96798CD25EF7651001EFCFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96798CC25EF7651001EFCFE /* Assets.xcassets */; };
 		E96798D025EF7651001EFCFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96798CE25EF7651001EFCFE /* LaunchScreen.storyboard */; };
-		E97A4AD52614671F00B895A3 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97A4AD42614671F00B895A3 /* DatabaseHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BFC4544326145B30007A57EC /* ImagePickerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
+		BFC4544726146829007A57EC /* TechniquesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechniquesTableViewCell.swift; sourceTree = "<group>"; };
+		BFC4544A261468DE007A57EC /* ListeTechniquesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeTechniquesVC.swift; sourceTree = "<group>"; };
 		E96798BD25EF7650001EFCFE /* NarutoMudrasDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NarutoMudrasDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E96798C025EF7650001EFCFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E96798C225EF7650001EFCFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +32,6 @@
 		E96798CC25EF7651001EFCFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E96798CF25EF7651001EFCFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E96798D125EF7651001EFCFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E97A4AD42614671F00B895A3 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,9 @@
 				E96798C225EF7650001EFCFE /* SceneDelegate.swift */,
 				BFC4544326145B30007A57EC /* ImagePickerManager.swift */,
 				E96798C425EF7650001EFCFE /* CreateSigneVC.swift */,
-				E97A4AD42614671F00B895A3 /* DatabaseHelper.swift */,
 				E96798C625EF7650001EFCFE /* Main.storyboard */,
+				BFC4544A261468DE007A57EC /* ListeTechniquesVC.swift */,
+				BFC4544726146829007A57EC /* TechniquesTableViewCell.swift */,
 				E96798CC25EF7651001EFCFE /* Assets.xcassets */,
 				E96798CE25EF7651001EFCFE /* LaunchScreen.storyboard */,
 				E96798D125EF7651001EFCFE /* Info.plist */,
@@ -148,9 +151,10 @@
 			files = (
 				E96798C525EF7650001EFCFE /* CreateSigneVC.swift in Sources */,
 				BFC4544426145B30007A57EC /* ImagePickerManager.swift in Sources */,
+				BFC4544B261468DE007A57EC /* ListeTechniquesVC.swift in Sources */,
 				E96798C125EF7650001EFCFE /* AppDelegate.swift in Sources */,
 				E96798CB25EF7650001EFCFE /* NarutoMudrasDB.xcdatamodeld in Sources */,
-				E97A4AD52614671F00B895A3 /* DatabaseHelper.swift in Sources */,
+				BFC4544826146829007A57EC /* TechniquesTableViewCell.swift in Sources */,
 				E96798C325EF7650001EFCFE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

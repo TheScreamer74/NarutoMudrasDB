@@ -2,17 +2,16 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H524" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Mudra" representedClassName="Mudra" syncable="YES" codeGenerationType="class">
         <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
         <attribute name="title" optional="YES" attributeType="String"/>
-        <relationship name="technique" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Technique" inverseName="mudra" inverseEntity="Technique"/>
+        <relationship name="technique" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Technique" inverseName="mudra" inverseEntity="Technique"/>
     </entity>
     <entity name="Technique" representedClassName="Technique" syncable="YES" codeGenerationType="class">
         <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="title" optional="YES" attributeType="String"/>
-        <relationship name="mudra" optional="YES" toMany="YES" deletionRule="No Action" destinationEntity="Mudra" inverseName="technique" inverseEntity="Mudra"/>
+        <relationship name="mudra" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Mudra" inverseName="technique" inverseEntity="Mudra"/>
     </entity>
     <elements>
-        <element name="Technique" positionX="-36" positionY="9" width="128" height="88"/>
-        <element name="Mudra" positionX="278.98046875" positionY="8.38671875" width="128" height="103"/>
+        <element name="Mudra" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Technique" positionX="-54" positionY="0" width="128" height="88"/>
     </elements>
 </model>

@@ -50,7 +50,7 @@ class DataBaseHelper {
         
         let techniqueInstance = Technique(context: context)
         techniqueInstance.title = nameSigne
-        techniqueInstance.image = imageSigne
+//        techniqueInstance.image = imageSigne
         techniqueInstance.creationDate = Date()
         
         do {
@@ -68,12 +68,12 @@ class DataBaseHelper {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Technique")
        
         do {
-            fetchingMudra = try context.fetch(fetchRequest) as! [Mudra]
+            fetchingTechnique = try context.fetch(fetchRequest) as! [Technique]
         } catch {
             print("Error while fetching the technique")
         }
         
-        return fetchingMudra
+        return fetchingTechnique
     }
     
     

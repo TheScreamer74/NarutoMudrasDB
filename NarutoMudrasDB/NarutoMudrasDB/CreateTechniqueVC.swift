@@ -25,6 +25,7 @@ class CreateTechniqueVC: UIViewController {
 
     
     @IBAction func addImageAction(_ sender: Any) {
+        //ajouter une image
     }
     
     @IBAction func addSigneAction(_ sender: Any) {
@@ -70,6 +71,16 @@ extension CreateTechniqueVC: UITableViewDelegate, UITableViewDataSource {
         cell.signeImage.image = UIImage(data: signes[indexPath.row].image!)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+      if editingStyle == .delete {
+        //MARK: Remove row
+        print("Deleted")
+        
+        //self.catNames.remove(at: indexPath.row)
+        //self.signeTableView.deleteRows(at: [indexPath], with: .automatic)
+      }
     }
     
 }

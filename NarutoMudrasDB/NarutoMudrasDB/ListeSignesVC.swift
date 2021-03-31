@@ -71,6 +71,16 @@ extension ListeSignesVC: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+      if editingStyle == .delete {
+        //MARK: Remove row
+        print("Deleted")
+        
+        //self.catNames.remove(at: indexPath.row)
+        //self.signesTableView.deleteRows(at: [indexPath], with: .automatic)
+      }
+    }
+    
     
     
 }

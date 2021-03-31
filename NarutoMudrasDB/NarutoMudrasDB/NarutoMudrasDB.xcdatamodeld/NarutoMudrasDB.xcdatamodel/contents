@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H524" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D80" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Mudra" representedClassName="Mudra" syncable="YES" codeGenerationType="class">
         <attribute name="creationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
         <attribute name="image" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
         <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="user" optional="YES" attributeType="String"/>
+        <attribute name="village" optional="YES" attributeType="String"/>
         <relationship name="technique" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Technique" inverseName="mudra" inverseEntity="Technique"/>
     </entity>
     <entity name="Technique" representedClassName="Technique" syncable="YES" codeGenerationType="class">
@@ -20,7 +23,7 @@
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Mudra" positionX="278.98046875" positionY="8.38671875" width="128" height="103"/>
+        <element name="Mudra" positionX="278.98046875" positionY="8.38671875" width="128" height="134"/>
         <element name="Technique" positionX="-36" positionY="9" width="128" height="148"/>
         <element name="Village" positionX="126" positionY="45" width="128" height="73"/>
     </elements>

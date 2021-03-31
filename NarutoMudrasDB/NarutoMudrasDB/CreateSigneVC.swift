@@ -14,7 +14,7 @@ class CreateSigneVC: UIViewController {
     @IBOutlet weak var nameSigneTxtField: UITextField!
     @IBOutlet weak var signeImageView: UIImageView!
     
-
+    
     @IBAction func valideSigneAction(_ sender: Any) {
         //Valide et ajouter le signe
         
@@ -27,7 +27,9 @@ class CreateSigneVC: UIViewController {
         }
         
         //Enregistrement en base
-       DataBaseHelper.shareInstance.saveMudra(nameSigne: title, imageSigne: imageData)
+        DataBaseHelper.shareInstance.saveMudra(nameSigne: title, imageSigne: imageData)
+        
+        self.dismiss(animated: true, completion: nil)
         
         
     }

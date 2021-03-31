@@ -8,6 +8,7 @@
 import UIKit
 
 class CreateTechniqueVC: UIViewController {
+    @IBOutlet weak var signeTableView: UITableView!
     @IBOutlet weak var navBarRightButton: UIButton!
     @IBOutlet weak var addImageButton: UIButton!
     
@@ -24,19 +25,22 @@ class CreateTechniqueVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        signeTableView.delegate = self
+        signeTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension CreateTechniqueVC: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListeSignesTableViewCell", for: indexPath) as! ListeSignesTableViewCell
+        return cell
+    }
+    
+    
 }
